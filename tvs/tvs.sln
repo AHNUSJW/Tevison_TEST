@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "tvs", "tvs.vdproj", "{DD6FF314-FCFA-45F5-9236-D7B128794E7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD6FF314-FCFA-45F5-9236-D7B128794E7A}.Debug|Default.ActiveCfg = Debug
+		{DD6FF314-FCFA-45F5-9236-D7B128794E7A}.Debug|Default.Build.0 = Debug
+		{DD6FF314-FCFA-45F5-9236-D7B128794E7A}.Release|Default.ActiveCfg = Release
+		{DD6FF314-FCFA-45F5-9236-D7B128794E7A}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F15E10FB-A635-4B94-8810-6AE36D181D18}
+	EndGlobalSection
+EndGlobal

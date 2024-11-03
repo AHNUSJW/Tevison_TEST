@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FB5BDA3-85B6-45EA-B07A-E4DE294DC596}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TVS</RootNamespace>
+    <AssemblyName>TVS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TVS.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>jingdu.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.8.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.6.9.16\lib\net40\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=6.9.16.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.6.9.16\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCalFormTVS8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCalFormTVS8.designer.cs">
+      <DependentUpon>MenuCalFormTVS8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCurrectTempForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCurrectTempForm.Designer.cs">
+      <DependentUpon>MenuCurrectTempForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCurrectTopTempForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCurrectTopTempForm.Designer.cs">
+      <DependentUpon>MenuCurrectTopTempForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCurveFormTVS8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCurveFormTVS8.designer.cs">
+      <DependentUpon>MenuCurveFormTVS8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCurveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCurveForm.designer.cs">
+      <DependentUpon>MenuCurveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDataFormTVS8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDataFormTVS8.designer.cs">
+      <DependentUpon>MenuDataFormTVS8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDataPdfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDataPdfForm.Designer.cs">
+      <DependentUpon>MenuDataPdfForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFieldFormTVS8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFieldFormTVS8.Designer.cs">
+      <DependentUpon>MenuFieldFormTVS8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFieldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFieldForm.Designer.cs">
+      <DependentUpon>MenuFieldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuIndividualCalFormTVS8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuIndividualCalFormTVS8.Designer.cs">
+      <DependentUpon>MenuIndividualCalFormTVS8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuIndividualCalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuIndividualCalForm.Designer.cs">
+      <DependentUpon>MenuIndividualCalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReportForm.designer.cs">
+      <DependentUpon>MenuReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuRunFormTVS8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuRunFormTVS8.designer.cs">
+      <DependentUpon>MenuRunFormTVS8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuRunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuRunForm.designer.cs">
+      <DependentUpon>MenuRunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDataForm.designer.cs">
+      <DependentUpon>MenuDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAboutBox.Designer.cs">
+      <DependentUpon>MenuAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAccountForm.Designer.cs">
+      <DependentUpon>MenuAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCalForm.designer.cs">
+      <DependentUpon>MenuCalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuConnectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuConnectForm.Designer.cs">
+      <DependentUpon>MenuConnectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFactForm.designer.cs">
+      <DependentUpon>MenuFactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReadForm.designer.cs">
+      <DependentUpon>MenuReadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSetForm.designer.cs">
+      <DependentUpon>MenuSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStepForm.Designer.cs">
+      <DependentUpon>MenuStepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDefine.cs" />
+    <Compile Include="Picture.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCT.Define.cs" />
+    <Compile Include="SCT.Function.cs" />
+    <Compile Include="Tmpicture.cs" />
+    <Compile Include="UIT.Define.cs" />
+    <Compile Include="UIT.Function.cs" />
+    <Compile Include="XET.Define.cs" />
+    <Compile Include="XET.Function.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCalFormTVS8.resx">
+      <DependentUpon>MenuCalFormTVS8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCurrectTempForm.resx">
+      <DependentUpon>MenuCurrectTempForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCurrectTopTempForm.resx">
+      <DependentUpon>MenuCurrectTopTempForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCurveForm.resx">
+      <DependentUpon>MenuCurveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCurveFormTVS8.resx">
+      <DependentUpon>MenuCurveFormTVS8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDataFormTVS8.resx">
+      <DependentUpon>MenuDataFormTVS8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDataPdfForm.resx">
+      <DependentUpon>MenuDataPdfForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFieldFormTVS8.resx">
+      <DependentUpon>MenuFieldFormTVS8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFieldForm.resx">
+      <DependentUpon>MenuFieldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuIndividualCalFormTVS8.resx">
+      <DependentUpon>MenuIndividualCalFormTVS8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuIndividualCalForm.resx">
+      <DependentUpon>MenuIndividualCalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReportForm.resx">
+      <DependentUpon>MenuReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuRunFormTVS8.resx">
+      <DependentUpon>MenuRunFormTVS8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuRunForm.resx">
+      <DependentUpon>MenuRunForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDataForm.resx">
+      <DependentUpon>MenuDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAboutBox.resx">
+      <DependentUpon>MenuAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAccountForm.resx">
+      <DependentUpon>MenuAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCalForm.resx">
+      <DependentUpon>MenuCalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuConnectForm.resx">
+      <DependentUpon>MenuConnectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFactForm.resx">
+      <DependentUpon>MenuFactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReadForm.resx">
+      <DependentUpon>MenuReadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSetForm.resx">
+      <DependentUpon>MenuSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStepForm.resx">
+      <DependentUpon>MenuStepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jingdu.ico" />
+    <None Include="Resources\修正.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
